@@ -1,4 +1,4 @@
-package Block_Ciphers;
+
 import java.math.*;
 import java.util.*;
 
@@ -48,7 +48,7 @@ public class RSA {
                 break;
         }
 
-        System.out.println("The value of d = " + d);        
+        System.out.println("The value of d = " + d);
         System.out.println("The private key : {" + d + ", " + n + "}");
 
         c = (Math.pow(msg, e)) % n;

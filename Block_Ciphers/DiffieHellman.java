@@ -1,4 +1,4 @@
-package Block_Ciphers;
+
 
 import java.util.*;
 
@@ -12,15 +12,15 @@ public class DiffieHellman {
     }
 
     static long power(long x, long y, long p) {
-        long res = 1; 
+        long res = 1;
 
-        x = x % p; 
+        x = x % p;
 
         while (y > 0) {
-            if (y % 2 == 1) 
+            if (y % 2 == 1)
                 res = (res * x) % p;
-        
-            y = y >> 1; 
+
+            y = y >> 1;
             x = (x * x) % p;
         }
         return res;
@@ -63,7 +63,7 @@ public class DiffieHellman {
     static long findPrimitive(long n) {
         HashSet<Long> s = new HashSet<Long>();
 
-        if (isPrime(n) == false) 
+        if (isPrime(n) == false)
             return -1;
 
         long phi = n - 1;

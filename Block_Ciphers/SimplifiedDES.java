@@ -1,7 +1,7 @@
-package Block_Ciphers;
+
 
 public class SimplifiedDES {
-    int key[] = {1, 0, 1, 0, 0, 0, 0, 0, 1, 0}; 
+    int key[] = {1, 0, 1, 0, 0, 0, 0, 0, 1, 0};
     int P10[] = { 3, 5, 2, 7, 4, 10, 1, 9, 8, 6 };
     int P8[] = { 6, 3, 7, 4, 8, 5, 10, 9 };
 
@@ -244,20 +244,20 @@ public class SimplifiedDES {
 
         SimplifiedDES obj = new SimplifiedDES();
 
-        obj.key_generation(); 
+        obj.key_generation();
 
         int[] plaintext = {1, 0, 0, 1, 0, 1, 1, 1}; // extra example for checking purpose
 
         System.out.println();
         System.out.println("Your plain Text is :");
-        for (int i = 0; i < 8; i++) 
+        for (int i = 0; i < 8; i++)
             System.out.print(plaintext[i] + " ");
 
         int[] ciphertext = obj.encryption(plaintext);
 
         System.out.println();
         System.out.println(
-                "Your cipher Text is :"); 
+                "Your cipher Text is :");
         for (int i = 0; i < 8; i++)
             System.out.print(ciphertext[i] + " ");
 
@@ -265,7 +265,7 @@ public class SimplifiedDES {
 
         System.out.println();
         System.out.println(
-                "Your decrypted Text is :"); 
+                "Your decrypted Text is :");
         for (int i = 0; i < 8; i++)
             System.out.print(decrypted[i] + " ");
     }

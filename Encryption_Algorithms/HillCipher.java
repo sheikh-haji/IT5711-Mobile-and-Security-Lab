@@ -1,4 +1,3 @@
-package Encryption_Algorithms;
 //Sample input: 
 
 //text -> helloworld
